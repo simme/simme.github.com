@@ -764,14 +764,18 @@ article .date {
 .content a:hover, .content a:focus {
   color: #124965;
 }
+/* line 179, ../sass/master.sass */
+.content blockquote {
+  font-style: italic;
+}
 
 @media all and (min-width: 400px) {
-  /* line 180, ../sass/master.sass */
+  /* line 183, ../sass/master.sass */
   .content {
     font-size: 100%;
   }
 }
-/* line 183, ../sass/master.sass */
+/* line 186, ../sass/master.sass */
 .tags {
   margin: 0;
   clear: both;
@@ -781,7 +785,7 @@ article .date {
   overflow: hidden;
 }
 
-/* line 191, ../sass/master.sass */
+/* line 194, ../sass/master.sass */
 .tags li, .tags a {
   float: left;
   height: 24px;
@@ -789,7 +793,7 @@ article .date {
   position: relative;
   font-size: 11px;
 }
-/* line 198, ../sass/master.sass */
+/* line 201, ../sass/master.sass */
 .tags li a, .tags a a {
   margin-right: 20px;
   padding: 0 10px 0 12px;
@@ -809,15 +813,15 @@ article .date {
   -khtml-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
 }
-/* line 207, ../sass/master.sass */
+/* line 210, ../sass/master.sass */
 .tags li a:hover, .tags li a:focus, .tags a a:hover, .tags a a:focus {
   background: #1a6990;
 }
-/* line 210, ../sass/master.sass */
+/* line 213, ../sass/master.sass */
 .tags li a:hover:after, .tags li a:focus:after, .tags a a:hover:after, .tags a a:focus:after {
   border-color: transparent transparent transparent #1a6990;
 }
-/* line 213, ../sass/master.sass */
+/* line 216, ../sass/master.sass */
 .tags li a:after, .tags a a:after {
   content: "";
   float: right;
@@ -830,12 +834,12 @@ article .date {
   border-style: solid;
   border-width: 12px 0 12px 12px;
 }
-/* line 225, ../sass/master.sass */
+/* line 228, ../sass/master.sass */
 .tags li span, .tags a span {
   display: none;
 }
 
-/* line 228, ../sass/master.sass */
+/* line 231, ../sass/master.sass */
 .pager {
   overflow: hidden;
   clear: both;
@@ -843,7 +847,7 @@ article .date {
   padding: 20px 0 0 0;
   margin: 0;
 }
-/* line 235, ../sass/master.sass */
+/* line 238, ../sass/master.sass */
 .pager li {
   display: block;
   float: left;
@@ -854,21 +858,21 @@ article .date {
   text-align: center;
   font-size: 0.8em;
 }
-/* line 245, ../sass/master.sass */
+/* line 248, ../sass/master.sass */
 .pager li.prev {
   margin-right: 2%;
   text-align: left;
 }
-/* line 249, ../sass/master.sass */
+/* line 252, ../sass/master.sass */
 .pager li.next {
   margin-left: 2%;
   text-align: right;
 }
-/* line 253, ../sass/master.sass */
+/* line 256, ../sass/master.sass */
 .pager li.disabled a {
   display: none;
 }
-/* line 256, ../sass/master.sass */
+/* line 259, ../sass/master.sass */
 .pager a {
   text-decoration: none;
   color: #2288bb;
@@ -877,59 +881,59 @@ article .date {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 261, ../sass/master.sass */
+/* line 264, ../sass/master.sass */
 .pager a:hover, .pager a:focus {
   color: #124965;
 }
 
 @media all and (min-width: 480px) {
-  /* line 265, ../sass/master.sass */
+  /* line 268, ../sass/master.sass */
   .about, .links, .info {
     float: left;
     margin: 0 5% 0 0;
     width: 30%;
   }
-  /* line 270, ../sass/master.sass */
+  /* line 273, ../sass/master.sass */
   .about h1, .links h1, .info h1 {
     border: none;
   }
 
-  /* line 273, ../sass/master.sass */
+  /* line 276, ../sass/master.sass */
   .info {
     margin-right: 0;
   }
 }
-/* line 276, ../sass/master.sass */
+/* line 279, ../sass/master.sass */
 .header {
   float: left;
 }
-/* line 279, ../sass/master.sass */
+/* line 282, ../sass/master.sass */
 .header h1 {
   margin: 0;
   padding: 0;
   clear: both;
 }
-/* line 284, ../sass/master.sass */
+/* line 287, ../sass/master.sass */
 .header h1 a {
   color: #333333;
   font: normal 1.2em/1.1 "sorts-mill-goudy", Baskerville, "Times New Roman", serif;
   text-decoration: none;
 }
 
-/* line 289, ../sass/master.sass */
+/* line 292, ../sass/master.sass */
 .more {
   color: #2288bb;
   text-decoration: none;
 }
-/* line 293, ../sass/master.sass */
+/* line 296, ../sass/master.sass */
 .more:hover, .more:focus {
   color: #0a2a3a;
 }
-/* line 296, ../sass/master.sass */
+/* line 299, ../sass/master.sass */
 .more:visited {
   color: #666666;
 }
-/* line 299, ../sass/master.sass */
+/* line 302, ../sass/master.sass */
 .more:after {
   content: " ➝";
 }
