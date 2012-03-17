@@ -12,6 +12,8 @@
   </ul>
 {% endunless %}
 
+<a class="FlattrButton" href="http://iamsim.me{{ page.url }}" title="{{ page.title }}" lang="{% if page.lang == 'en' %}en{% else %}se{% endif %}" rel="flattr;tags:blog;"></a>
+
 <ul class="pager">
 {% if page.previous %}
   <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
