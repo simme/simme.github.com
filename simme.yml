@@ -1,0 +1,15 @@
+session:
+  name: IAmSimme
+  windows:
+    - name: IAmSimme
+      root: ~/Sites/simme.github.com
+      splits:
+        - cmd: "vim ."
+        - cmd: "cd assets/themes/simme/ && compass watch"
+          width: 50
+        - cmd: "cd assets/themes/simme"
+    - name: Jekyll
+      root: ~/Sites/simme.github.com
+      splits:
+        - cmd: "jekyll --server"
+

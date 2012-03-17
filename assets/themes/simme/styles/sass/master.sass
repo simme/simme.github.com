@@ -1,0 +1,300 @@
+@import "compass"
+@import "normalize"
+
+$maxwidth:    1060
+$headerfont:  "sorts-mill-goudy", Baskerville, "Times New Roman", serif
+$bodyfont:    "pt-sans", Helvetica, Arial, Verdana, sans-serif
+$accent:      #28b
+
+body
+  background: #eee
+  color: #333
+  font: normal 1.4em/1.3 $bodyfont
+  padding: 10px
+
+
+
+.wrap
+  margin: auto
+  max-width: #{$maxwidth}px
+
+  > header
+    margin: 0 0 5px 0
+    overflow: hidden
+    border-bottom: 3px solid #454545
+    padding: 20px 0 3px 0
+    position: relative
+
+    hgroup
+      float: left
+
+      a
+        line-height: 1
+
+    nav
+      clear: both
+      overflow: hidden
+
+      ul
+        margin: 0
+        padding: 0
+
+        li
+          display: inline
+
+      a
+        color: $accent
+        display: block
+        float: left
+        text-decoration: none
+        margin-right: 10px
+        font-size: .8em
+        +transition(all .2s ease-in)
+
+        &:hover, &:focus
+          color: darken($accent, 30%)
+
+        &:active
+          position: relative
+          top: 1px
+
+  > footer
+    border-top: 3px solid #454545
+    overflow: hidden
+    margin: 20px 0
+    padding: 20px 0
+  
+@media all and (min-width: 800px)
+  .wrap > header nav
+    clear: none
+    position: absolute
+    bottom: 6px
+    right: 0
+    
+    a
+      margin: 0 0 4px 20px
+
+.about, .links, .info
+  color: #444
+  font-size: .9em
+  line-height: 1.3
+  margin-bottom: 30px
+  width: 100%
+
+  h1
+    border-bottom: 1px solid #ccc
+    font: normal 1.4em/1.1 $headerfont
+    margin: 0 0 10px 0
+    padding: 0
+
+  ul
+    margin: 0
+    padding: 0
+
+  p
+    margin: 0 0 20px 0
+
+  li
+    margin-bottom: 6px
+
+  a
+    color: $accent
+    text-decoration: none
+    +transition(all .2s ease-in)
+
+    &:hover, &:focus
+      color: darken($accent, 20%)
+
+      .simme
+        color: #000
+
+  .simme
+    color: #444
+    +transition(all .2s ease-in)
+
+.posts
+  list-style: none
+  margin: 0
+  padding: 0
+
+  li
+    border-bottom: 1px solid #ccc
+
+    &:last-child
+      border-bottom: none
+
+article
+  display: block
+  padding: 10px 0
+
+  .date
+    color: #777
+    font-size: .7em
+
+.content
+  font-size: 80%
+
+  h1
+    font: normal 1.6em/1 $headerfont
+
+    a
+      color: $accent
+      text-decoration: none
+
+      &:hover, &:focus
+        color: darken($accent, 20%)
+        +transition(all .2s ease-in)
+
+  h2
+    font: normal 1.5em/1 $headerfont
+
+  h3
+    font: normal 1.4em/1 $headerfont
+
+  h4
+    font: normal 1.3em/1 $headerfont
+
+  h5
+    font: normal 1.2em/1 $headerfont
+
+  h6
+    font: normal 1.1em/1 $headerfont
+
+  h1, h2, h3, h4, h5, h6
+    color: #000
+    margin: 10px 0
+    padding: 0
+  
+  p
+    color: #444
+
+  a
+    text-decoration: underline
+    color: $accent
+    +transition(all .2s ease-in)
+
+    &:hover, &:focus
+      color: darken($accent, 20%)
+
+@media all and (min-width: 400px)
+  .content
+    font-size: 100%
+
+.tags
+  margin: 0
+  clear: both
+  padding: 10px 0
+  position: relative
+  list-style: none
+  overflow: hidden
+
+.tags li, .tags a
+  float: left
+  height: 24px
+  line-height: 24px
+  position: relative
+  font-size: 11px
+
+  a
+    margin-right: 20px
+    padding: 0 10px 0 12px
+    background: $accent
+    color: #fff
+    text-decoration: none
+    +border-bottom-left-radius(4px)
+    +border-top-left-radius(4px)
+
+    &:hover, &:focus
+      background: darken($accent, 10%)
+
+    &:hover:after, &:focus:after
+      border-color: transparent transparent transparent darken($accent, 10%)
+
+    &:after
+      content: ""
+      float: right
+      position: absolute
+      top: 0
+      right: -12px
+      width: 0
+      height: 0
+      border-color: transparent transparent transparent $accent
+      border-style: solid
+      border-width: 12px 0 12px 12px
+
+  span
+    display: none
+
+.pager
+  overflow: hidden
+  clear: both
+  list-style: none
+  padding: 20px 0 0 0
+  margin: 0
+
+  li
+    display: block
+    float: left
+    margin: 0
+    padding: 0
+    width: 32%
+    text-align: center
+    font-size: .8em
+
+    &.prev
+      margin-right: 2%
+      text-align: left
+
+    &.next
+      margin-left: 2%
+      text-align: right
+
+  .disabled
+    text-indent: -999px
+
+  a
+    text-decoration: none
+    color: $accent
+    +transition(all .2s ease-in)
+
+    &:hover, &:focus
+      color: darken($accent, 20%)
+
+@media all and (min-width: 480px)
+  .about, .links, .info
+    float: left
+    margin: 0 5% 0 0
+    width: 30%
+
+    h1
+      border: none
+
+  .info
+    margin-right: 0
+
+.header
+  float: left
+
+  h1
+    margin: 0
+    padding: 0
+    clear: both
+
+    a
+      color: #333
+      font: normal 1.2em/1.1 $headerfont
+      text-decoration: none
+
+.more
+  color: $accent
+  text-decoration: none
+
+  &:hover, &:focus
+    color: darken($accent, 30%)
+
+  &:visited
+    color: #666
+
+  &:after
+    content: " ➝"
+
