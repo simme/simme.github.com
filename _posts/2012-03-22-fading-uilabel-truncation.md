@@ -30,6 +30,8 @@ Here is the code, hope you find it useful!
     }
 {% endhighlight %}
 
+I'm doing this in a UILabel subclass that I assign my labels in _Interface Builder_, but could be done from the `UILabel`'s owener as well.
+
 maskLayer is a `CAGradientLayer` that I apply as a mask on the label. Making long lines fade out.
 
 If there are better ways of doing this, please tell me on [twitter](http://twitter.com/simmelj)!
