@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Fading UILabel Truncation"
-category: 
-tags: []
+category: Development
+tags: [ios, development, tutorial]
 ---
 {% include JB/setup %}
 
