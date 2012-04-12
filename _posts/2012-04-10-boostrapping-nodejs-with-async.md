@@ -88,7 +88,7 @@ The **series** completion callback will be called once all functions are run _or
 
 ## The other functions
 
-So, what about **waterfall** and **auto**. They may fit your style better.
+So, what about **waterfall** and **auto**. They might fit your style better.
 
 With **waterfall** you could have some kind of state object that you pass between the functions instead of passing a reference to self as I do. That might actually be a prettier way of doing it.
 
