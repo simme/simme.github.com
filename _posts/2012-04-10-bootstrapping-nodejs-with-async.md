@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Boostrapping Node.js with Async"
+title: "Bootstrapping Node.js with Async"
 category: NodeJS
 tags: [node, development]
 ---
 {% include JB/setup %}
 
-When writing node applications it's easy to get lost in the callback jungle. Especially during the boostrap phase of your app. You have lots of clients connecting to lots of servers and some of them depend on each other. This is ends up in code that's hard to read and a nightmare to rewrite.
+When writing node applications it's easy to get lost in the callback jungle. Especially during the bootstrap phase of your app. You have lots of clients connecting to lots of servers and some of them depend on each other. This is ends up in code that's hard to read and a nightmare to rewrite.
 
 Enter [Async](https://github.com/caolan/async)! **Async** is an awesome Node module to help you manage asynchronous sequences and functions.
 
@@ -28,7 +28,7 @@ Going forward I assume you know how to use **npm** to get **Async** into your pr
 
 ## Going async
 
-The way I usually structure my app is with somekind of singleton object that acts as the common state for the app. This object holds a reference to the **Express** app, database clients etc. I'll exclude that boilerplate code here though and leave it for another article.
+The way I usually structure my app is with some kind of singleton object that acts as the common state for the app. This object holds a reference to the **Express** app, database clients etc. I'll exclude that boilerplate code here though and leave it for another article.
 
 Let's end the rambling and write some code shall we?
 
@@ -49,7 +49,7 @@ Let's end the rambling and write some code shall we?
           throw err;
         }
         
-        console.log('Boostrapped!');
+        console.log('Bootstrapped!');
       });
       
       /**
@@ -92,7 +92,7 @@ So, what about **waterfall** and **auto**. They might fit your style better.
 
 With **waterfall** you could have some kind of state object that you pass between the functions instead of passing a reference to self as I do. That might actually be a prettier way of doing it.
 
-With **auto** you could potentially speed up the boostrap process a little by running functions that don't depend on anyone else in parallell. Although I've found that this adds unnecessary complixty. You're bootstrap process should in optimal cases only run once, since youre servers always have 100% uptime, right, **right**? Anyway I personally feel like it's a place where performance should be traded for simplicity. It doesn't really matter if your boostrap process takes 100ms or 10ms.
+With **auto** you could potentially speed up the bootstrap process a little by running functions that don't depend on anyone else in parallell. Although I've found that this adds unnecessary complixty. Your bootstrap process should in optimal cases only run once, since your servers always have 100% uptime, right, **right**? Anyway I personally feel like it's a place where performance should be traded for simplicity. It doesn't really matter if your bootstrap process takes 100ms or 10ms.
 
 ## Conclusion
 
