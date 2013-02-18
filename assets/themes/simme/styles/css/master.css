@@ -585,8 +585,9 @@ body {
   text-decoration: none;
   margin-right: 10px;
   font-size: 0.8em;
-  -moz-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -652,8 +653,9 @@ body {
 .about a, .links a, .info a {
   color: #2288bb;
   text-decoration: none;
-  -moz-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -668,8 +670,9 @@ body {
 /* line 111, ../sass/master.sass */
 .about .simme, .links .simme, .info .simme {
   color: #444444;
-  -moz-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -716,66 +719,74 @@ article .date {
 /* line 144, ../sass/master.sass */
 .content h1 a:hover, .content h1 a:focus {
   color: #124965;
-  -moz-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 /* line 148, ../sass/master.sass */
 .content h2 {
   font: normal 1.5em/1 "sorts-mill-goudy", Baskerville, "Times New Roman", serif;
+  border-bottom: 1px solid #cccccc;
 }
-/* line 151, ../sass/master.sass */
+/* line 152, ../sass/master.sass */
 .content h3 {
-  font: normal 1.4em/1 "sorts-mill-goudy", Baskerville, "Times New Roman", serif;
+  font: normal 1.2em/1 "sorts-mill-goudy", Baskerville, "Times New Roman", serif;
+  font-weight: bold;
 }
-/* line 154, ../sass/master.sass */
+/* line 156, ../sass/master.sass */
 .content h4 {
   font: normal 1.3em/1 "sorts-mill-goudy", Baskerville, "Times New Roman", serif;
 }
-/* line 157, ../sass/master.sass */
+/* line 159, ../sass/master.sass */
 .content h5 {
   font: normal 1.2em/1 "sorts-mill-goudy", Baskerville, "Times New Roman", serif;
 }
-/* line 160, ../sass/master.sass */
+/* line 162, ../sass/master.sass */
 .content h6 {
   font: normal 1.1em/1 "sorts-mill-goudy", Baskerville, "Times New Roman", serif;
 }
-/* line 163, ../sass/master.sass */
+/* line 165, ../sass/master.sass */
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
   color: black;
   margin: 10px 0;
   padding: 0;
 }
-/* line 168, ../sass/master.sass */
+/* line 170, ../sass/master.sass */
 .content p {
   color: #444444;
 }
-/* line 171, ../sass/master.sass */
+/* line 173, ../sass/master.sass */
 .content a {
   text-decoration: underline;
   color: #2288bb;
-  -moz-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 176, ../sass/master.sass */
+/* line 178, ../sass/master.sass */
 .content a:hover, .content a:focus {
   color: #124965;
 }
-/* line 179, ../sass/master.sass */
+/* line 181, ../sass/master.sass */
 .content blockquote {
   font-style: italic;
 }
+/* line 184, ../sass/master.sass */
+.content img {
+  max-width: 100%;
+}
 
 @media all and (min-width: 400px) {
-  /* line 183, ../sass/master.sass */
+  /* line 188, ../sass/master.sass */
   .content {
     font-size: 100%;
   }
 }
-/* line 186, ../sass/master.sass */
+/* line 191, ../sass/master.sass */
 .tags {
   margin: 0;
   clear: both;
@@ -785,7 +796,7 @@ article .date {
   overflow: hidden;
 }
 
-/* line 194, ../sass/master.sass */
+/* line 199, ../sass/master.sass */
 .tags li, .tags a {
   float: left;
   height: 24px;
@@ -793,7 +804,7 @@ article .date {
   position: relative;
   font-size: 11px;
 }
-/* line 201, ../sass/master.sass */
+/* line 206, ../sass/master.sass */
 .tags li a, .tags a a {
   margin-right: 20px;
   padding: 0 10px 0 12px;
@@ -802,26 +813,24 @@ article .date {
   text-decoration: none;
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
-  -o-border-bottom-left-radius: 4px;
   -ms-border-bottom-left-radius: 4px;
-  -khtml-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
-  -o-border-top-left-radius: 4px;
   -ms-border-top-left-radius: 4px;
-  -khtml-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
 }
-/* line 210, ../sass/master.sass */
+/* line 215, ../sass/master.sass */
 .tags li a:hover, .tags li a:focus, .tags a a:hover, .tags a a:focus {
   background: #1a6990;
 }
-/* line 213, ../sass/master.sass */
+/* line 218, ../sass/master.sass */
 .tags li a:hover:after, .tags li a:focus:after, .tags a a:hover:after, .tags a a:focus:after {
   border-color: transparent transparent transparent #1a6990;
 }
-/* line 216, ../sass/master.sass */
+/* line 221, ../sass/master.sass */
 .tags li a:after, .tags a a:after {
   content: "";
   float: right;
@@ -834,12 +843,12 @@ article .date {
   border-style: solid;
   border-width: 12px 0 12px 12px;
 }
-/* line 228, ../sass/master.sass */
+/* line 233, ../sass/master.sass */
 .tags li span, .tags a span {
   display: none;
 }
 
-/* line 231, ../sass/master.sass */
+/* line 236, ../sass/master.sass */
 .pager {
   overflow: hidden;
   clear: both;
@@ -847,7 +856,7 @@ article .date {
   padding: 20px 0 0 0;
   margin: 0;
 }
-/* line 238, ../sass/master.sass */
+/* line 243, ../sass/master.sass */
 .pager li {
   display: block;
   float: left;
@@ -858,88 +867,89 @@ article .date {
   text-align: center;
   font-size: 0.8em;
 }
-/* line 248, ../sass/master.sass */
+/* line 253, ../sass/master.sass */
 .pager li.prev {
   margin-right: 2%;
   text-align: left;
 }
-/* line 252, ../sass/master.sass */
+/* line 257, ../sass/master.sass */
 .pager li.next {
   margin-left: 2%;
   text-align: right;
 }
-/* line 256, ../sass/master.sass */
+/* line 261, ../sass/master.sass */
 .pager li.disabled a {
   display: none;
 }
-/* line 259, ../sass/master.sass */
+/* line 264, ../sass/master.sass */
 .pager a {
   text-decoration: none;
   color: #2288bb;
-  -moz-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 264, ../sass/master.sass */
+/* line 269, ../sass/master.sass */
 .pager a:hover, .pager a:focus {
   color: #124965;
 }
 
 @media all and (min-width: 480px) {
-  /* line 268, ../sass/master.sass */
+  /* line 273, ../sass/master.sass */
   .about, .links, .info {
     float: left;
     margin: 0 5% 0 0;
     width: 30%;
   }
-  /* line 273, ../sass/master.sass */
+  /* line 278, ../sass/master.sass */
   .about h1, .links h1, .info h1 {
     border: none;
   }
 
-  /* line 276, ../sass/master.sass */
+  /* line 281, ../sass/master.sass */
   .info {
     margin-right: 0;
   }
 }
-/* line 279, ../sass/master.sass */
+/* line 284, ../sass/master.sass */
 .header {
   float: left;
 }
-/* line 282, ../sass/master.sass */
+/* line 287, ../sass/master.sass */
 .header h1 {
   margin: 0;
   padding: 0;
   clear: both;
 }
-/* line 287, ../sass/master.sass */
+/* line 292, ../sass/master.sass */
 .header h1 a {
   color: #333333;
   font: normal 1.2em/1.1 "sorts-mill-goudy", Baskerville, "Times New Roman", serif;
   text-decoration: none;
 }
 
-/* line 292, ../sass/master.sass */
+/* line 297, ../sass/master.sass */
 .more {
   color: #2288bb;
   text-decoration: none;
 }
-/* line 296, ../sass/master.sass */
+/* line 301, ../sass/master.sass */
 .more:hover, .more:focus {
   color: #0a2a3a;
 }
-/* line 299, ../sass/master.sass */
+/* line 304, ../sass/master.sass */
 .more:visited {
   color: #666666;
 }
-/* line 302, ../sass/master.sass */
+/* line 307, ../sass/master.sass */
 .more:after {
   content: " ➝";
 }
 
 /*Code highlight */
-/* line 306, ../sass/master.sass */
+/* line 311, ../sass/master.sass */
 .highlight {
   font-size: 0.7em;
   background: #434343;
