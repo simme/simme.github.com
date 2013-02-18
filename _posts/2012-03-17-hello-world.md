@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hello World"
-category: [Personal]
+category: Personal
 tags: []
 ---
 {% include JB/setup %}
